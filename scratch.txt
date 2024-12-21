@@ -1,0 +1,10 @@
+letter-spacing: 0em; direction: ltr;
+fill: rgb(0, 0, 0);
+font-size: 122.779px;
+font-family: madefor-display-bold, helveticaneuew01-65medi, helveticaneuew02-65medi, helveticaneuew10-65medi, sans-serif;
+font-weight: normal;
+font-style: normal;
+text-anchor: middle;
+text-decoration: none;
+text-transform: none;
+overflow: visible;
