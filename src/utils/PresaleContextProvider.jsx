@@ -470,7 +470,7 @@ const PresaleContextProvider = ({ children }) => {
     setIsBuyTokenCall(true);
   };
 
-  console.log(presaleStatus);
+  // console.log(presaleStatus);
 
   // useEffect(() => {
   //   if (inputUsdtValue == 0 || inputUsdtValue == "" || !inputUsdtValue) return;
