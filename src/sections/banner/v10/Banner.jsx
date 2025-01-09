@@ -267,14 +267,25 @@ const Banner = () => {
                 <div className="_bar-container_j2o0e_38">
                   <div className="_bar_j2o0e_38" />
                 </div>
-                <div className="_text-container_j2o0e_9">
-                  <div className="_text-center_j2o0e_18">
+                <div className="_text-container_j2o0e_8">
+                  <div className="_text-left_j2o0e_15">
                     Raised:
                     <span className="_bold_j2o0e_29">
                       $
                       {new Intl.NumberFormat("en-US").format(
                         getUSDTRaised().toFixed(0)
                       )}
+                    </span>
+                  </div>
+                  <div className="_text-left_j2o0e_15">
+                    Inso Balance:
+                    <span className="_bold_j2o0e_29">
+                      {Number(buyersToken).toFixed(2)}($
+                      {(
+                        (Number(buyersToken) * Number(currentPrice)) /
+                        10 ** 18
+                      ).toFixed(2)}
+                      )
                     </span>
                   </div>
                 </div>
