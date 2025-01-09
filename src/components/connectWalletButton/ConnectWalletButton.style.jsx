@@ -1,19 +1,21 @@
 import styled, { css } from "styled-components";
 
 const ConnectWalletButtonStyleWrapper = styled.div`
+  display: flex;
+  align-items: center;
   height: 100%;
 
   .connect-wallet-btn {
-    font-size: .75rem!important;
+    font-size: .75rem;
     margin-right: .75rem;
 
-    border-radius: 3.5rem;
+    border-radius: 0.5rem;
     border: 2px solid transparent;
     outline: none;
     color: #fff;
     box-shadow: 0 4px 4px #00000040;
     --bg: #000;
-    background: linear-gradient(180deg,var(--bg),var(--bg)) padding-box,conic-gradient(from 180deg at 50% 50%,#ff98e2,#ffc876 35.77deg,#79fff7 153.75deg,#9f53ff 258.75deg,#ff98e2 360deg) border-box;
+    background: linear-gradient(94deg, #dd00ac 10.66%, #7130c3 53.03%, #410093 96.34%, rgba(255, 0, 238, .26) 191.41%, rgba(255, 59, 212, 0) 191.43%);
     font-weight: 400;
     line-height: 1em;
     padding-inline:.5rem;
@@ -37,7 +39,7 @@ const ConnectWalletButtonStyleWrapper = styled.div`
       transform: translate(-50%);
       height: 0;
       width: 100%;
-      background: conic-gradient(from 180deg at 50% 50%,#ff98e2,#ffc876 35.77deg,#79fff7 153.75deg,#9f53ff 258.75deg,#ff98e2 360deg);
+      background: linear-gradient(94deg, #dd00ac 10.66%, #7130c3 53.03%, #410093 96.34%, rgba(255, 0, 238, .26) 191.41%, rgba(255, 59, 212, 0) 191.43%);
       height: 100%;
       top: 50%;
       transform: translate(-50%,-50%);
@@ -50,26 +52,18 @@ const ConnectWalletButtonStyleWrapper = styled.div`
   }
 
   .custom_btn {
-    border-radius: 3.5rem;
-    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    border: none;
     outline: none;
     color: #fff;
     box-shadow: 0 4px 4px #00000040;
     --bg: #000;
-    background: linear-gradient(180deg, var(--bg), var(--bg)) padding-box,
-      conic-gradient(
-          from 180deg at 50% 50%,
-          #ff98e2,
-          #ffc876 35.77deg,
-          #79fff7 153.75deg,
-          #9f53ff 258.75deg,
-          #ff98e2 360deg
-        )
-        border-box;
-    font-size: 0.9375rem;
+    background: linear-gradient(94deg, #dd00ac 10.66%, #7130c3 53.03%, #410093 96.34%, rgba(255, 0, 238, .26) 191.41%, rgba(255, 59, 212, 0) 191.43%);
+    font-size: 15px;
     font-weight: 400;
     line-height: 1em;
-    height: 100%;
+    width: 100%;
+    height: 40px;
     padding-inline: 1rem;
     position: relative;
     z-index: 1;
@@ -79,6 +73,15 @@ const ConnectWalletButtonStyleWrapper = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: transform .3s ease, background .3s ease;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .custom_btn {
+      width: 100%;
+      height: 35px;
+      font-size: 14px;
+    }
   }
 
   .custom_btn svg {
@@ -91,34 +94,10 @@ const ConnectWalletButtonStyleWrapper = styled.div`
     transition: 0.2s ease-in-out;
   }
 
-  .custom_btn:after {
-    transition: 0.4s ease-in-out;
-    content: "";
-    border-radius: inherit;
-    pointer-events: none;
-    z-index: -1;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    height: 0;
-    width: 100%;
-    background: conic-gradient(
-      from 180deg at 50% 50%,
-      #ff98e2,
-      #ffc876 35.77deg,
-      #79fff7 153.75deg,
-      #9f53ff 258.75deg,
-      #ff98e2 360deg
-    );
-    height: 100%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  }
-
   .custom_btn:hover,
   .custom_btn.active {
-    color: #000;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    transform: ease-out 1s;
   }
 
   .custom_btn:hover:after,
@@ -263,7 +242,7 @@ const ConnectWalletButtonStyleWrapper = styled.div`
         }
       `}
    
-  @media screen and (max-width: 991px) {
+  @media (max-width: 991px) {
     ${({ variant }) =>
       variant === "v7" &&
       css`
@@ -273,7 +252,7 @@ const ConnectWalletButtonStyleWrapper = styled.div`
       `}
   }
 
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     .connect-wallet-btn {
       padding: 10px 20px;
       min-width: auto;

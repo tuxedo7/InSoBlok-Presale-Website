@@ -46,14 +46,15 @@ const ConnectWalletButton = ({ variant }) => {
     <ConnectWalletButtonStyleWrapper variant={variant}>
       {openConnectModal && variant != "v7" && (
         <button className="connect-wallet-btn custom_btn custom_btn--default custom_btn--large" onClick={openConnectModal}>
-          Connect Wallet
+          <i className="fa-solid fa-wallet" style={{marginRight: '5px'}}></i>
+          CONNECT WALLET
         </button>
       )}
 
       {openConnectModal && variant === "v7" && (
         <button className="v" onClick={openConnectModal}>
           <img src={IconImg1} alt="icon" className="icon" />
-          <span className="name">Connect Wallet</span>
+          <span className="name">CONNECT WALLET</span>
           <span className="icon-text">
             <FaPlus />
           </span>
@@ -76,7 +77,7 @@ const ConnectWalletButton = ({ variant }) => {
       {openAccountModal && variant === "v7" && (
         <button className="connect-wallet-btn custom_btn custom_btn--default custom_btn--large" onClick={openAccountModal}>
           <img src={IconImg1} alt="icon" className="icon" />
-          <span className="name">Wallet</span>
+          <span className="name">WALLET</span>
           <span className="icon-text">
             <FaPlus />
           </span>
