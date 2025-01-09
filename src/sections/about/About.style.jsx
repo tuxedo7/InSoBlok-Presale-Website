@@ -3,14 +3,14 @@ import styled from "styled-components";
 const AboutWrapper = styled.div`
   .about-container {
     width: 100%;
-    padding: 2rem;
+    // padding: 2rem;
   }
 
   .about-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    // gap: 4rem;
   }
 
   .about {
@@ -19,7 +19,7 @@ const AboutWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    gap: 2rem;
+    gap: 4rem;
   }
 
   .about-text {
@@ -40,7 +40,12 @@ const AboutWrapper = styled.div`
     color: #7376aa; /* Light gray text */
   }
 
-  .about-image img {
+  .about-image {
+    width: 400px;
+    height: auto;
+  }
+
+  .about-image img, .lottie {
     max-width: 100%;
     height: auto;
   }

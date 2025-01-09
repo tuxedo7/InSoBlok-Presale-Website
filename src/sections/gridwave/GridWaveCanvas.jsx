@@ -21,7 +21,7 @@ function CameraControls() {
 
   const controlRef = useRef();
   useFrame(() => controlRef.current.update());
-  return (
+  return (  
     <orbitControls
       ref={controlRef}
       args={[camera, domElement]}
@@ -91,7 +91,7 @@ function Points() {
         attach="material"
         map={imgTex}
         color={0xb142ff}
-        size={1}
+        size={0.25}
         sizeAttenuation
         transparent={false}
         alphaTest={0.5}

@@ -744,20 +744,12 @@ const BannerWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   ._text-container_j2o0e_8 {
     justify-content: center;
   }
-}
-
-._text-container_j2o0e_9 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 0.5rem;
 }
 
 ._text-left_j2o0e_15 {
@@ -825,6 +817,8 @@ const BannerWrapper = styled.div`
   background-color: #9485fd4d;
   border-radius: 999rem;
   height: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 ._bar_j2o0e_38 {
@@ -832,7 +826,7 @@ const BannerWrapper = styled.div`
   height: 100%;
   width: var(--frac);
   background: linear-gradient(90deg, #E43292 20%, #6635DF 100%);
-  border-radius: 999rem
+  border-radius: 999rem;
 }
 
 ._bar_j2o0e_38 > img {
