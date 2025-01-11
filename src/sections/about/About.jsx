@@ -2,8 +2,8 @@ import POI_IMG from "../../assets/images/POI.png";
 import AIVM_IMG from "../../assets/images/AIVM.png";
 import AboutWrapper from "./About.style.jsx";
 import Lottie from "react-lottie";
-import animationData1 from "./Lottie1.json";
-import animationData2 from "./Lottie2.json";
+import animationData1 from "../../assets/images/Animation 1/data.json";
+import animationData2 from "../../assets/images/Animation 2/data.json";
 
 const About = () => {
   const defaultOptions1 = {

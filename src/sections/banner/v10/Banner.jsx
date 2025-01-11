@@ -267,7 +267,7 @@ const Banner = () => {
                 <div className="_bar-container_j2o0e_38">
                   <div className="_bar_j2o0e_38" />
                 </div>
-                <div className="_text-container_j2o0e_8">
+                <div className="_text-container_j2o0e_9">
                   <div className="_text-left_j2o0e_15">
                     Raised:
                     <span className="_bold_j2o0e_29">

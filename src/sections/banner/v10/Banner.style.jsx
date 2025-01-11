@@ -745,10 +745,23 @@ const BannerWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
 }
+  
+._text-container_j2o0e_9 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 0.5rem;
+}
 
 @media (max-width: 500px) {
   ._text-container_j2o0e_8 {
     justify-content: center;
+    gap: 0.5rem;
+  }
+
+  ._text-container_j2o0e_9 {
+    align-items: center;
   }
 }
 
