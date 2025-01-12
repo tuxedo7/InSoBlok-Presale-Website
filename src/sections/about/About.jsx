@@ -2,14 +2,14 @@ import POI_IMG from "../../assets/images/POI.png";
 import AIVM_IMG from "../../assets/images/AIVM.png";
 import AboutWrapper from "./About.style.jsx";
 import Lottie from "react-lottie";
-import animationData1 from "../../assets/images/Animation 1/data.json";
-import animationData2 from "../../assets/images/Animation 2/data.json";
+import animation1 from "../../assets/images/Animation 1/data.js";
+import animation2 from "../../assets/images/Animation 2/data.js";
 
 const About = () => {
   const defaultOptions1 = {
     loop: true,
     autoplay: true,
-    animationData: animationData1,
+    animationData: animation1,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -18,7 +18,7 @@ const About = () => {
   const defaultOptions2 = {
     loop: true,
     autoplay: true,
-    animationData: animationData2,
+    animationData: animation2,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
