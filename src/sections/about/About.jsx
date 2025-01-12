@@ -43,7 +43,7 @@ const About = () => {
               </p>
             </div>
             <div className="about-image">
-              <Lottie className="lottie" options={defaultOptions2} />
+              <Lottie className="lottie" options={defaultOptions1} />
               {/* <img src={POI_IMG} alt="PoI Graphic" /> */}
             </div>
           </div>
@@ -51,7 +51,7 @@ const About = () => {
           {/* Artificial Intelligence Virtual Machine (AIVM) Section */}
           <div className="about">
             <div className="about-image">
-              <Lottie className="lottie" options={defaultOptions1} />
+              <Lottie className="lottie" options={defaultOptions2} />
               {/* <img src={AIVM_IMG} alt="AIVM Graphic" /> */}
             </div>
             <div className="about-text">
