@@ -1,5 +1,11 @@
 import RoadmapWrapper from "./Roadmap.style.jsx";
 import React, { useState } from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+
+// import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css/skyblue";
+// import "@splidejs/react-splide/css/sea-green";
+import "@splidejs/react-splide/css/core";
 
 const steps = [
   {
@@ -21,13 +27,31 @@ const steps = [
     description:
       "ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do",
   },
+  {
+    id: 4,
+    title: "Prototype Development",
+    description:
+      "ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do",
+  },
+  {
+    id: 5,
+    title: "Testnet Rollout",
+    description:
+      "ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do",
+  },
+  {
+    id: 6,
+    title: "Mainnet Launch",
+    description:
+      "ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum do",
+  },
 ];
 
 const Roadmap = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const togglePanel = (index) => {
-    console.log(index)
+    console.log(index);
     // If the clicked panel is not the currently active panel, set it active
     if (activeIndex !== index) {
       steps.forEach((st) => {
@@ -58,21 +82,29 @@ const Roadmap = () => {
             </div>
           </div>
           <div className="roadmap-division-bar" />
-          <div className="roadmap-steps">
+          <Splide
+            className="roadmap-steps"
+            aria-label="Roadmap"
+            options={{ type: "loop", perPage: 3, arrows: false, focus: 'left', gap: '2rem' }}
+          >
             {steps.map((step) => (
-              <div
-                key={step.id}
-                className={`roadmap-step ${step.highlight ? "highlight" : ""}`}
-                onClick={() => togglePanel(step.id)}
-              >
-                <div className="step-header">
-                  <span className="step-number">{step.id}</span>
-                  <h3 className="step-title">{step.title}</h3>
+              <SplideSlide>
+                <div
+                  key={step.id}
+                  className={`roadmap-step ${
+                    step.highlight ? "highlight" : ""
+                  }`}
+                  onClick={() => togglePanel(step.id)}
+                >
+                  <div className="roadmap-step-header">
+                    <span className="roadmap-step-number">{step.id}</span>
+                    <h3 className="roadmap-step-title">{step.title}</h3>
+                  </div>
+                  <p className="roadmap-step-description">{step.description}</p>
                 </div>
-                <p className="step-description">{step.description}</p>
-              </div>
+              </SplideSlide>
             ))}
-          </div>
+          </Splide>
 
           <div className="roadmap-footer">
             <button className="see-roadmap-button">See Roadmap</button>

@@ -158,13 +158,12 @@ const RoadmapWrapper = styled.div`
 
   /* Steps Section */
   .roadmap-steps {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    padding-top: 0rem;
   }
 
   .roadmap-step {
     background: transparent;
+    margin: 1rem 0.5rem;
     border-radius: 12px;
     position: relative;
     text-align: left;
@@ -177,8 +176,46 @@ const RoadmapWrapper = styled.div`
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   }
 
-  .step-header {
-    .step-number {
+  .splide__arrow--prev {
+    left: 0rem;
+  }
+
+  .splide__arrow--next {
+    right: 0rem;
+  }
+
+  .splide__arrow svg {
+    fill: #ccceef;
+
+    &:hover {
+      fill: #e43292;
+    }
+  }
+
+  .splide__pagination {
+    bottom: -1rem;
+  }
+
+  .splide__pagination__page {
+    background: #ccc;
+    border: 0;
+    border-radius: 2.5px;
+    display: inline-block;
+    height: 3px;
+    margin: 5px;
+    padding: 0;
+    position: relative;
+    transition: background-color .2s linear;
+    width: 20px;
+
+    &:hover,
+    &.is-active {
+      background: #e43292;
+    }
+  }
+
+  .roadmap-step-header {
+    .roadmap-step-number {
       width: 2.25rem;
       height: 2.25rem;
       display: flex;
@@ -193,7 +230,7 @@ const RoadmapWrapper = styled.div`
       border-radius: 0.375rem;
     }
 
-    .step-title {
+    .roadmap-step-title {
       margin-top: 0.375rem;
       font-size: 1.5rem;
       font-weight: 600;
@@ -204,18 +241,18 @@ const RoadmapWrapper = styled.div`
       color: #7064e9;
       cursor: pointer;
 
-      .step-number {
+      .roadmap-step-number {
         border-color: #7064e9;
         -webkit-text-stroke: 1px #7064e9;
       }
 
-      .step-title {
+      .roadmap-step-title {
         color: #7064e9;
       }
     }
   }
 
-  .step-description {
+  .roadmap-step-description {
     margin-top: 0.375rem;
     font-size: 1rem;
     font-weight: 400;
@@ -223,12 +260,12 @@ const RoadmapWrapper = styled.div`
     line-height: 1.5;
   }
 
-  .roadmap-step.highlight .step-number {
+  .roadmap-step.highlight .roadmap-step-number {
     border-color: #e43292;
     -webkit-text-stroke: 1px #e43292;
   }
 
-  .roadmap-step.highlight .step-title {
+  .roadmap-step.highlight .roadmap-step-title {
     background: linear-gradient(90deg, #e43292 0%, #6635df 100%);
     -webkit-background-clip: text;
     background-clip: text;
