@@ -11,7 +11,7 @@ const HomeV10 = () => {
     <Layout pageTitle="INSO Pre-sale">
       <Header variant="v1" />
       <GridWaveCanvas />
-      <Banner /> 
+      <Banner />
       <ToastContainer />
       <Footer variant="v1" />
     </Layout>

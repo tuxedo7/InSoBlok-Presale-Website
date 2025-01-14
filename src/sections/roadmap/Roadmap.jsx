@@ -6,6 +6,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/skyblue";
 // import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
+import { Link } from "react-router-dom";
 
 const steps = [
   {
@@ -85,7 +86,14 @@ const Roadmap = () => {
           <Splide
             className="roadmap-steps"
             aria-label="Roadmap"
-            options={{ type: "loop", perPage: 3, arrows: false, focus: 'left', gap: '2rem' }}
+            options={{
+              type: "loop",
+              perPage: 3,
+              arrows: false,
+              pagination: false,
+              focus: "left",
+              gap: "2rem",
+            }}
           >
             {steps.map((step) => (
               <SplideSlide>
@@ -107,7 +115,9 @@ const Roadmap = () => {
           </Splide>
 
           <div className="roadmap-footer">
-            <button className="see-roadmap-button">See Roadmap</button>
+            <Link to="/roadmap">
+              <button className="see-roadmap-button">See Roadmap</button>
+            </Link>
           </div>
         </div>
       </div>

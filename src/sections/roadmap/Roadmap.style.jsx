@@ -193,7 +193,7 @@ const RoadmapWrapper = styled.div`
   }
 
   .splide__pagination {
-    bottom: -1rem;
+    bottom: -1.5rem;
   }
 
   .splide__pagination__page {
@@ -201,11 +201,11 @@ const RoadmapWrapper = styled.div`
     border: 0;
     border-radius: 2.5px;
     display: inline-block;
-    height: 3px;
+    height: 2px;
     margin: 5px;
     padding: 0;
     position: relative;
-    transition: background-color .2s linear;
+    transition: background-color 0.2s linear;
     width: 20px;
 
     &:hover,
@@ -274,7 +274,7 @@ const RoadmapWrapper = styled.div`
 
   /* Footer Section */
   .roadmap-footer {
-    margin-top: 2.75rem;
+    margin-top: 3.5rem;
   }
 
   .see-roadmap-button {

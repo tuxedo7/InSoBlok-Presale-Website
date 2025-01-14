@@ -1,17 +1,17 @@
 import { useEffect, useState, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { clsx } from "clsx";
 import HeaderWrapper from "./Header.style";
 import ConnectWalletButton from "../../connectWalletButton/ConnectWalletButton";
 import MobileMenu from "../mobileMenu/MobileMenu";
 import Logo from "../../../assets/images/inso_logo.webp";
-import TopBanner from "../../../assets/images/top-banner.png";
+// import TopBanner from "../../../assets/images/top-banner.png";
 import Marquee from "react-fast-marquee";
 
 const menuList = [
-  { label: "Home", link: "" },
+  { label: "Home", link: "/" },
   { label: "About", link: "" },
-  { label: "Roadmap", link: "" },
+  { label: "Roadmap", link: "/roadmap" },
   { label: "Blockchain", link: "" },
   { label: "Audit KYC", link: "" },
 ];
@@ -59,7 +59,7 @@ const Header = ({ variant }) => {
     <>
       <HeaderWrapper className="header-section">
         <div className="header-top-news bg-image1">
-          <img className="top-banner" src={TopBanner}></img>
+          {/* <img className="top-banner" src={TopBanner}></img> */}
           <div className="marquee-container">
             <Marquee speed={110}>
               <div className="marquee">
@@ -80,14 +80,14 @@ const Header = ({ variant }) => {
         >
           <div className="navbar-content">
             <div className="navbar-left">
-              <NavLink className="navbar-logo" to="/" end>
+              <Link className="navbar-logo" to="/" end>
                 INSOBLOK
                 <img src={logoImg} alt="Logo" />
-              </NavLink>
+              </Link>
             </div>
             <div className="navbar-center">
               {menuList.map((menu, index) => (
-                <NavLink
+                <Link
                   key={index}
                   className="nav-link"
                   to={menu.link}
@@ -96,7 +96,7 @@ const Header = ({ variant }) => {
                 >
                   {" "}
                   {menu.label}
-                </NavLink>
+                </Link>
               ))}
             </div>
             <div className="navbar-right">
