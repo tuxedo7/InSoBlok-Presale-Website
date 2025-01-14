@@ -1,5 +1,5 @@
 import ForeFrontWrapper from './ForeFront.style.jsx';
-import AIVM_IMG from '../../assets/images/inso_logo.webp';
+import AIVM_IMG from '../../assets/images/Inso_Blok_Logo.png';
 
 const ForeFront = () => {
   return (

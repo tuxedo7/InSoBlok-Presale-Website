@@ -55,12 +55,22 @@ const Footer = ({ variant }) => {
                   <li>Documentation</li>
                   <li>
                     <a
-                      className="_section-link_1qdzc_143"
-                      href="https://www.insoblokai.io/_files/ugd/3a15de_62fefda46cc7485a82afc0694d6b86f1.pdf"
+                      className="link"
+                      href={Whitepaper}
                       target="_blank"
                       end
                     >
                       Whitepaper
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="link"
+                      href="/roadmap"
+                      target="_blank"
+                      end
+                    >
+                      Roadmap
                     </a>
                   </li>
                   <li>Announcements</li>
@@ -73,7 +83,7 @@ const Footer = ({ variant }) => {
                   <li>How to Buy</li>
                   <li>
                     <a
-                      className="_section-link_1qdzc_143"
+                      className="link"
                       href="https://www.insoblokai.io/contact"
                       target="_blank"
                       end

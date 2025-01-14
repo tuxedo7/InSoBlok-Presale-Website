@@ -36,6 +36,7 @@ const HeaderWrapper = styled.div`
     position: relative;
     width: 100%;
     height: 40px;
+    background: #d63384;
   }
 
   .marquee {
