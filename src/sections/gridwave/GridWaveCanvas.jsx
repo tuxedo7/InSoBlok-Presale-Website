@@ -61,7 +61,7 @@ function Points() {
   }, [count, sep, graph]);
 
   useFrame(() => {
-    t += 6; // speed
+    t += 10; // speed
     const positions = bufferRef.current.array;
 
     let i = 0;

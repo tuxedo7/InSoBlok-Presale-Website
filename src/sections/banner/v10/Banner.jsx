@@ -192,10 +192,11 @@ const Banner = () => {
         <div className="_buy-wrapper_insoblok_1">
           <div className="__presale-info_insoblok_7">
             <div className="__presale-info-item_insoblok_16">
-              InSoBlok AI Empowering <br />
+            InSoBlok AI Layer 1 Protocol
+            <br />
               <span>
                 <span className="__presale-info-label_insoblok_3">
-                  SocialFi
+                Empowering SocialFi
                 </span>{" "}
                 with Web3
               </span>
@@ -203,17 +204,17 @@ const Banner = () => {
                 <span
                   className={visibleIndex == 0 ? "is_visible" : "is_hidden"}
                 >
-                  Influencers
+                  Decentralized
                 </span>
                 <span
                   className={visibleIndex == 1 ? "is_visible" : "is_hidden"}
                 >
-                  Community
+                  Influencer-Centric
                 </span>
                 <span
                   className={visibleIndex == 2 ? "is_visible" : "is_hidden"}
                 >
-                  Decentralization
+                  User-Driven Ecosystem
                 </span>
               </span>
             </div>
