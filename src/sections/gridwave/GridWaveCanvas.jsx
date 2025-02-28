@@ -25,8 +25,8 @@ function CameraControls() {
     <orbitControls
       ref={controlRef}
       args={[camera, domElement]}
-      autoRotate={90}
-      autoRotateSpeed={0.05}
+      // autoRotate={90}
+      // autoRotateSpeed={0.05}
     />
   );
 }
@@ -61,7 +61,7 @@ function Points() {
   }, [count, sep, graph]);
 
   useFrame(() => {
-    t += 1; // speed
+    t += 6; // speed
     const positions = bufferRef.current.array;
 
     let i = 0;
