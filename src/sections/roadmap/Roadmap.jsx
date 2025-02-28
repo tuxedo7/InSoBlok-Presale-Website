@@ -75,7 +75,7 @@ const Roadmap = () => {
               <div className="roadmap-tag">
                 <span>InSoBlok AI Roadmap</span>
               </div>
-              <h1>InSoBlok AI Roadmap</h1>
+              <h1 className="highlight">InSoBlok AI Roadmap</h1>
               <p>
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                 in voluptate velit esse cillum do

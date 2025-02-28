@@ -44,6 +44,16 @@ const FAQWrapper = styled.div`
     color: #ccceef;
   }
 
+  .header .highlight {
+    background: linear-gradient(
+        89.83deg,
+        rgb(228, 50, 146) 12.22%,
+        rgb(102, 53, 223) 92.05%
+      )
+      text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .content {
     margin-top: 3.25rem;
     display: flex;

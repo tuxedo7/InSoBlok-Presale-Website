@@ -14,6 +14,7 @@ const RoadmapWrapper = styled.div`
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     transition: border-color 0.3s ease;
     background: #0f1021;
+    // background: linear-gradient(rgb(18, 29, 40), rgb(18, 29, 40)) border-box padding-box, linear-gradient(274deg, rgba(215, 246, 167, 0.05) 0%, rgba(108, 207, 244, 0.05) 94.08%) padding-box, linear-gradient(89deg, rgb(28, 197, 225) 0.21%, rgb(199, 242, 132) 115.96%) border-box;
 
     &::before {
       content: "";
@@ -85,6 +86,16 @@ const RoadmapWrapper = styled.div`
     font-weight: 600;
     color: #ccceef;
     margin: 0.5rem 0;
+  }
+
+  .roadmap-header .roadmap-center .highlight {
+    background: linear-gradient(
+        89.83deg,
+        rgb(228, 50, 146) 12.22%,
+        rgb(102, 53, 223) 92.05%
+      )
+      text;
+    -webkit-text-fill-color: transparent;
   }
 
   .roadmap-header .roadmap-center p {

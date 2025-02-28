@@ -44,7 +44,7 @@ const Tokenomics = () => {
             <div className="tag">
               <span>Tokenomics</span>
             </div>
-            <h1>Tokenomics</h1>
+            <h1 className="highlight">Tokenomics</h1>
             <p>
               In this groundbreaking tokenomics model, we weave together the
               threads of artificial intelligence, non-fungible tokens (NFTs),

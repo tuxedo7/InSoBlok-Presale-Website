@@ -33,6 +33,16 @@ const AboutWrapper = styled.div`
     color: #ccceef;
   }
 
+  .about-text .highlight {
+    background: linear-gradient(
+        89.83deg,
+        rgb(228, 50, 146) 12.22%,
+        rgb(102, 53, 223) 92.05%
+      )
+      text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .about-text p {
     font-size: 1.125rem;
     font-weight: 400;
@@ -45,7 +55,8 @@ const AboutWrapper = styled.div`
     height: auto;
   }
 
-  .about-image img, .lottie {
+  .about-image img,
+  .lottie {
     max-width: 100%;
     height: auto;
   }
