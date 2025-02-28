@@ -115,7 +115,7 @@ const FAQ = () => {
             <div className="tag">
               <span>InSoBlok FAQ</span>
             </div>
-            <h1>Frequently Asked Questions</h1>
+            <h1 className="highlight">Frequently Asked Questions</h1>
           </div>
           <div className="content">
             {faqs.map((faq, index) => (

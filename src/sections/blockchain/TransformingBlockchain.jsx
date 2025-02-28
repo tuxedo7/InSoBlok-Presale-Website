@@ -65,7 +65,7 @@ const TransformingBlockchain = () => {
       <div className="features-grid-container">
         <div className="header">
           <div className="tag"><span>InSoBlok AI Features</span></div>
-          <h1>Transforming lnfluencer Commerce & Real-World Assets in the Web3 Era</h1>
+          <h1 className="highlight">Transforming lnfluencer Commerce & Real-World Assets in the Web3 Era</h1>
           <p>Tokenized Experiences, DecentraIized PIatforms and Next-Gen Engagement</p>
         </div>
         <div className="grid">

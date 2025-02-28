@@ -10,7 +10,7 @@ const ForeFront = () => {
             <img src={AIVM_IMG} alt="InSoBlok AI Graphic" />
           </div>
           <div className="forefront-content">
-            <h1>Secure the Future, Join InSoBlok Protocol AI</h1>
+            <h1 className="highlight">Secure the Future, Join InSoBlok Protocol AI</h1>
             <p>
               Be at the forefront of technological evolution with InSoBlok AI’s
               presale. Secure exclusive access to discounted tokens and groundbreaking

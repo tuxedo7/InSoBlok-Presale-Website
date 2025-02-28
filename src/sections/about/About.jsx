@@ -31,7 +31,7 @@ const About = () => {
         <div className="about-inner">
           <div className="about">
             <div className="about-text">
-              <h2>
+              <h2 className="highlight">
                 ClosetChain: Transforming the $1.7 Trillion Fashion lndustry
               </h2>
               <p>
@@ -55,7 +55,9 @@ const About = () => {
               {/* <img src={AIVM_IMG} alt="AIVM Graphic" /> */}
             </div>
             <div className="about-text">
-              <h2>Scalable Web3 Expansion Across lndustries</h2>
+              <h2 className="highlight">
+                Scalable Web3 Expansion Across lndustries
+              </h2>
               <p>
                 With a strong foundation in fashion, ClosetChain is designed to
                 scale into other sectors:
