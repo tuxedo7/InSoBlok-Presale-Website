@@ -419,7 +419,7 @@ const BannerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 3.5rem; /* Base font size */
+  font-size: 3rem; /* Base font size */
   font-weight: 700; /* Bold text */
   color: #ccceef;
   line-height: 67px; /* Adjust line height */
@@ -460,7 +460,7 @@ const BannerWrapper = styled.div`
 }
 
 .__presale-info-label_insoblok_4 {
-  color: #696a7f !important;
+  color: white !important;
 }
   
 /* Hidden state */
